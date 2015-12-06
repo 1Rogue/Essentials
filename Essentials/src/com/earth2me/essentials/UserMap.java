@@ -114,11 +114,7 @@ public class UserMap extends CacheLoader<String, User> implements IConf
 	{
 		try
 		{
-			return users.get(uuid.toString());
-		}
-		catch (ExecutionException ex)
-		{
-			return null;
+			return users.getIfPresent(uuid.toString());
 		}
 		catch (UncheckedExecutionException ex)
 		{

@@ -44,6 +44,14 @@
 			<id>ess-repo</id>
 			<url>http://repo.ess3.net/content/groups/public</url>
 		</repository>
+		<repository>
+			<id>spigot-repo</id>
+			<url>http://hub.spigotmc.org/nexus/content/repositories/public/</url>
+		</repository>
+		<repository>
+			<id>codelanx-repo</id>
+			<url>http://repo.codelanx.com/content/repositories/public/</url>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
@@ -71,9 +79,8 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.7.2-R0.3-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${user.dir}/lib/bukkit.jar</systemPath>
+			<version>1.8.8-R0.1-SNAPSHOT</version>
+			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
